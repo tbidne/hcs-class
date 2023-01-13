@@ -1,0 +1,7 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "lib:hcs-class"
+
+    - path: "./app/Main.hs"
+      component: "hcs-class:exe:hcs-class"

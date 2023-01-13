@@ -1,0 +1,19 @@
+cabal-version:      2.4
+name:               hcs-class
+version:            0.1
+
+library
+  exposed-modules:  Lib
+  build-depends:    base >=4.14.0.0 && <4.18
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable hcs-class
+  main-is:          Main.hs
+  build-depends:
+    , base
+    , hcs-class
+
+  hs-source-dirs:   app
+  ghc-options:      -threaded -with-rtsopts=-N
+  default-language: Haskell2010
